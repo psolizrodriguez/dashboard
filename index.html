@@ -1,0 +1,178 @@
+<html lang="en">
+<head><title>Accessibility Insights for Web automated checks result</title>
+    <style> body, h1, p, div {
+        color: black;
+        font-family: 'Segoe UI Web (West European)', 'Segoe UI', '-apple-system', BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Ubuntu, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        margin: 0px;
+    }
+
+    a {
+        color: #106EBE;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #004578;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 100;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-weight: 100;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 17px;
+        font-weight: 300;
+        margin: 16px 0px;
+        padding: 5px 32px;
+        background-color: #E1E8F5;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    td.label {
+        font-weight: bold;
+        width: 100px;
+    }
+
+    .report-header h1 img {
+        vertical-align: -12px;
+        padding-right: 10px;
+    }
+
+    .report-header div img {
+        padding-right: 6px;
+    }
+
+    .report-scan-details {
+        margin: 16px 0px 16px 32px;
+    }
+
+    .report-scan-details td {
+        font-size: 12px;
+    }
+
+    .report-checks {
+        margin: 16px 32px 16px 8px;
+    }
+
+    .report-check-top {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 2px 0px;
+    }
+
+    .report-instances {
+        margin: 8px 0px 16px 4px;
+    }
+
+    .report-instances p {
+        font-size: 14px;
+    }
+
+    .report-instance-table td {
+        font-size: 11px;
+    }
+
+    .report-instance-table .snippet-row {
+        border-bottom: 2px solid #EAEAEA
+    }
+
+    .report-instance-table .path-row td {
+        padding: 6px 0px;
+    }
+
+    .report-instance-table .snippet-row td {
+        padding: 0px 0px 6px 0px;
+    }
+
+    .report-instance-table .snippet-row .content {
+        font-family: Menlo, Consolas, Courier New, monospace;
+        word-break: break-all;
+    }
+
+    .report-images {
+        width: 50% !important;
+    }
+    </style>
+</head>
+<body>
+<div class="report-body" role="main"><h3>Assessment details</h3>
+    <div class="report-scan-details">
+        <table>
+            <tbody>
+            <tr>
+                <td class="label">Target page</td>
+                <td><span id="page-title">Provata Health (Test) Portal</span> (<a target="_blank"
+                                                                                  href="https://osi.hthu.com/dashboard"
+                                                                                  class="ms-Link insights-link root-102"
+                                                                                  aria-labelledby="page-title"
+                                                                                  title="Navigate to target page">https://osi.hthu.com/dashboard</a>)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="label">Scan date/time</td>
+                <td>2019-06-10 5:34 PM GMT-4</td>
+            </tr>
+            <tr>
+                <td class="label">Environment</td>
+                <td>Chrome version 74.0.3729.169</td>
+            </tr>
+            <tr>
+                <td class="label">Tool version</td>
+                <td>Accessibility Insights for Web 2.4.1; Axe 3.2.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div role="region" aria-labelledby="failed"><h3 id="failed">Failed checks</h3>
+        <ul class="report-checks">
+            <li class="report-check">
+                <div class="report-check-top"><a target="_blank"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/aria-required-children?application=msftAI"
+                                                 class="ms-Link insights-link root-102"
+                                                 aria-describedby="check-help-f-0">aria-required-children:</a> <span
+                        id="check-help-f-0">Certain ARIA roles must contain particular children</span> <span>(1) </span><span
+                        class="guidance-links"><a target="_blank"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships"
+                                                  class="ms-Link insights-link root-102">WCAG 1.3.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">div[role=&quot;tablist&quot;]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;div role=&quot;tablist&quot; aria-labelledby=&quot;carousel-title&quot;
+                                data-reactid=&quot;.0.3.$=1$/dashboard.0.0.0.0.1.1.0&quot;&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div><img  class="report-images" src="https://drive.google.com/file/d/1ELzNXoKkAxVZGouGku8JuEfzKPMhH_Te/view"></div>
+</div>
+</body>
+</html>
