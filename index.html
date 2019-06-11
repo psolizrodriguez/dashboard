@@ -109,6 +109,31 @@
         padding-left: 50px;
         padding-bottom: 10px;
     }
+
+    .report-check-top {
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .report-check-top:after {
+        content: '\002B';
+    }
+
+    .active:after {
+        content: "\2212";
+    }
+
+    .active, .report-check-top:hover {
+        border: #106EBE;
+        border-style: solid;
+    }
+
+    .report-instances {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
     </style>
 </head>
 <body>
@@ -1942,5 +1967,543 @@
     </div>
     <div><img class="report-images" src="images/dialog-tos.png"></div>
 </div>
+<div class="report-body" role="main"><h3>Assessment details</h3>
+    <div class="report-scan-details">
+        <table>
+            <tbody>
+            <tr>
+                <td class="label">Target page</td>
+                <td><span id="page-title">Provata Health (Test) Portal</span> (<a aria-labelledby="page-title"
+                                                                                  class="ms-Link insights-link root-102"
+                                                                                  href="https://osi.hthu.com/resources"
+                                                                                  target="_blank"
+                                                                                  title="Navigate to target page">https://osi.hthu.com/resources</a>)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="label">Scan date/time</td>
+                <td>2019-06-11 2:48 PM GMT-4</td>
+            </tr>
+            <tr>
+                <td class="label">Environment</td>
+                <td>Chrome version 74.0.3729.169</td>
+            </tr>
+            <tr>
+                <td class="label">Tool version</td>
+                <td>Accessibility Insights for Web 2.4.1; Axe 3.2.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div aria-labelledby="failed" role="region"><h3 id="failed">Failed checks</h3>
+        <ul class="report-checks">
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-1"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/frame-title?application=msftAI"
+                                                 target="_blank">frame-title:</a> <span
+                        id="check-help-f-1">Frames must have title attribute</span> <span>(1) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks"
+                                                  target="_blank">WCAG 2.4.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;iframe src="https://connect.humanapi.co?clientUserId=107906&amp;amp;clientId=556aa4fcee594ea3119c2ba0090d1faf2878699b&amp;amp;lang=en&amp;amp;modal=1&amp;amp;mode=medical"
+                                frameborder="0" allowtransparency="true" id="human-connect" style="width: 100%; height:
+                                100%; position: fixed; top: 0px; left: 0px; overflow: hidden auto; z-index: 99999;
+                                display: block; margin: 0px; padding: 0px; border: 0px none transparent; visibility:
+                                visible; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-2"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/image-alt?application=msftAI"
+                                                 target="_blank">image-alt:</a> <span
+                        id="check-help-f-2">Images must have alternate text</span> <span>(5) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
+                                                  target="_blank">WCAG 1.1.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect#splash-image</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img id="splash-image" data-reactid=".0.1.0.0.0.0"&gt;</td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect#powered-by</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img id="powered-by"
+                                src="https://cdn.humanapi.co/connect/dist/20180908002012-6cd506a-master/resources/dist/images/poweredby.svg"
+                                data-reactid=".0.2.1"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectimg[data-reactid="\.0\.2\.2\.0\.0\.0\.1\.0"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img
+                                src="https://cdn.humanapi.co/connect/dist/20180908002012-6cd506a-master/resources/dist/images/compliant.svg"
+                                data-reactid=".0.2.2.0.0.0.1.0"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectimg[data-reactid="\.0\.2\.2\.0\.0\.1\.1\.0"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img
+                                src="https://cdn.humanapi.co/connect/dist/20180908002012-6cd506a-master/resources/dist/images/trusted.svg"
+                                data-reactid=".0.2.2.0.0.1.1.0"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectimg[data-reactid="\.0\.2\.2\.0\.0\.2\.1\.0"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img
+                                src="https://cdn.humanapi.co/connect/dist/20180908002012-6cd506a-master/resources/dist/images/encrypted.svg"
+                                data-reactid=".0.2.2.0.0.2.1.0"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div><img class="report-images" src="images/dialog-secure.png"></div>
+</div>
+<div class="report-body" role="main"><h3>Assessment details</h3>
+    <div class="report-scan-details">
+        <table>
+            <tbody>
+            <tr>
+                <td class="label">Target page</td>
+                <td><span id="page-title">Provata Health (Test) Portal</span> (<a aria-labelledby="page-title"
+                                                                                  class="ms-Link insights-link root-102"
+                                                                                  href="https://osi.hthu.com/resources"
+                                                                                  target="_blank"
+                                                                                  title="Navigate to target page">https://osi.hthu.com/resources</a>)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="label">Scan date/time</td>
+                <td>2019-06-11 2:53 PM GMT-4</td>
+            </tr>
+            <tr>
+                <td class="label">Environment</td>
+                <td>Chrome version 74.0.3729.169</td>
+            </tr>
+            <tr>
+                <td class="label">Tool version</td>
+                <td>Accessibility Insights for Web 2.4.1; Axe 3.2.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div aria-labelledby="failed" role="region"><h3 id="failed">Failed checks</h3>
+        <ul class="report-checks">
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-1"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/frame-title?application=msftAI"
+                                                 target="_blank">frame-title:</a> <span
+                        id="check-help-f-1">Frames must have title attribute</span> <span>(1) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks"
+                                                  target="_blank">WCAG 2.4.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;iframe src="https://connect.humanapi.co?clientUserId=107906&amp;amp;clientId=556aa4fcee594ea3119c2ba0090d1faf2878699b&amp;amp;lang=en&amp;amp;modal=1&amp;amp;mode=medical"
+                                frameborder="0" allowtransparency="true" id="human-connect" style="width: 100%; height:
+                                100%; position: fixed; top: 0px; left: 0px; overflow: hidden auto; z-index: 99999;
+                                display: block; margin: 0px; padding: 0px; border: 0px none transparent; visibility:
+                                visible; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-2"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/image-alt?application=msftAI"
+                                                 target="_blank">image-alt:</a> <span
+                        id="check-help-f-2">Images must have alternate text</span> <span>(1) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
+                                                  target="_blank">WCAG 1.1.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect#powered-by</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img id="powered-by"
+                                src="https://cdn.humanapi.co/connect/dist/20180908002012-6cd506a-master/resources/dist/images/poweredby.svg"
+                                data-reactid=".0.0.2.1"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-3"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/label?application=msftAI"
+                                                 target="_blank">label:</a> <span id="check-help-f-3">Form elements must have labels</span>
+                    <span>(1) </span><span class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                                     href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships"
+                                                                     target="_blank">WCAG 1.3.1</a><span>,&nbsp;</span><a
+                            class="ms-Link insights-link root-102"
+                            href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html"
+                            target="_blank">WCAG 3.3.2</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectinput</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input type="text" class="" placeholder="Search here" value=""
+                                style="display:block;" autocomplete="off" data-reactid=".0.0.1.0.2.0.0.0"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div><img class="report-images" src="images/dialog-search.png"></div>
+</div>
+<div class="report-body" role="main"><h3>Assessment details</h3>
+    <div class="report-scan-details">
+        <table>
+            <tbody>
+            <tr>
+                <td class="label">Target page</td>
+                <td><span id="page-title">Provata Health (Test) Portal</span> (<a aria-labelledby="page-title"
+                                                                                  class="ms-Link insights-link root-102"
+                                                                                  href="https://osi.hthu.com/resources"
+                                                                                  target="_blank"
+                                                                                  title="Navigate to target page">https://osi.hthu.com/resources</a>)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="label">Scan date/time</td>
+                <td>2019-06-11 2:57 PM GMT-4</td>
+            </tr>
+            <tr>
+                <td class="label">Environment</td>
+                <td>Chrome version 74.0.3729.169</td>
+            </tr>
+            <tr>
+                <td class="label">Tool version</td>
+                <td>Accessibility Insights for Web 2.4.1; Axe 3.2.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div aria-labelledby="failed" role="region"><h3 id="failed">Failed checks</h3>
+        <ul class="report-checks">
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-1"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/frame-title?application=msftAI"
+                                                 target="_blank">frame-title:</a> <span
+                        id="check-help-f-1">Frames must have title attribute</span> <span>(1) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks"
+                                                  target="_blank">WCAG 2.4.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;iframe src="https://connect.humanapi.co?clientUserId=107906&amp;amp;clientId=556aa4fcee594ea3119c2ba0090d1faf2878699b&amp;amp;lang=en&amp;amp;modal=1&amp;amp;mode=medical"
+                                frameborder="0" allowtransparency="true" id="human-connect" style="width: 100%; height:
+                                100%; position: fixed; top: 0px; left: 0px; overflow: hidden auto; z-index: 99999;
+                                display: block; margin: 0px; padding: 0px; border: 0px none transparent; visibility:
+                                visible; background-color: transparent; -webkit-tap-highlight-color: transparent;"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-2"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/image-alt?application=msftAI"
+                                                 target="_blank">image-alt:</a> <span
+                        id="check-help-f-2">Images must have alternate text</span> <span>(1) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
+                                                  target="_blank">WCAG 1.1.1</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connect#powered-by</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;img id="powered-by"
+                                src="https://cdn.humanapi.co/connect/dist/20180908002012-6cd506a-master/resources/dist/images/poweredby.svg"
+                                data-reactid=".0.2.1"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-3"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/label?application=msftAI"
+                                                 target="_blank">label:</a> <span id="check-help-f-3">Form elements must have labels</span>
+                    <span>(5) </span><span class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                                     href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships"
+                                                                     target="_blank">WCAG 1.3.1</a><span>,&nbsp;</span><a
+                            class="ms-Link insights-link root-102"
+                            href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html"
+                            target="_blank">WCAG 3.3.2</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectinput[placeholder="Name\ of\ your\ provider"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input type="text" class="" placeholder="Name of your provider"
+                                value="" autocapitalize="off" autocorrect="off" tabindex="1" data-reactid=".0.1.0.2.0.0"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectinput[placeholder="City"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input type="text" class="" placeholder="City" value=""
+                                autocapitalize="off" autocorrect="off" tabindex="1" data-reactid=".0.1.0.2.1.0.0.0"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectinput[placeholder="State"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input type="text" class="" placeholder="State" value=""
+                                autocapitalize="off" autocorrect="off" tabindex="1" data-reactid=".0.1.0.2.1.1.0.0"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectinput[data-reactid="\.0\.1\.0\.2\.2\.0"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input type="text" class="" placeholder="Your patient portal URL
+                                (optional)" value="" autocapitalize="off" autocorrect="off" tabindex="1"
+                                data-reactid=".0.1.0.2.2.0"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">#human-connectinput[placeholder="Details\ \(optional\)"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input type="text" class="" placeholder="Details (optional)" value=""
+                                autocapitalize="off" autocorrect="off" tabindex="1" data-reactid=".0.1.0.2.3.0"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div><img class="report-images" src="images/dialog-cantFind.png"></div>
+</div>
+<div class="report-body" role="main"><h3>Assessment details</h3>
+    <div class="report-scan-details">
+        <table>
+            <tbody>
+            <tr>
+                <td class="label">Target page</td>
+                <td><span id="page-title">Provata Health (Test) Portal</span> (<a aria-labelledby="page-title"
+                                                                                  class="ms-Link insights-link root-102"
+                                                                                  href="https://osi.hthu.com/resources"
+                                                                                  target="_blank"
+                                                                                  title="Navigate to target page">https://osi.hthu.com/resources</a>)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="label">Scan date/time</td>
+                <td>2019-06-11 3:30 PM GMT-4</td>
+            </tr>
+            <tr>
+                <td class="label">Environment</td>
+                <td>Chrome version 74.0.3729.169</td>
+            </tr>
+            <tr>
+                <td class="label">Tool version</td>
+                <td>Accessibility Insights for Web 2.4.1; Axe 3.2.2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div aria-labelledby="failed" role="region"><h3 id="failed">Failed checks</h3>
+        <ul class="report-checks">
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-0"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/button-name?application=msftAI"
+                                                 target="_blank">button-name:</a> <span
+                        id="check-help-f-0">Buttons must have discernible text</span> <span>(2) </span><span
+                        class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                  href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+                                                  target="_blank">WCAG 4.1.2</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">div[data-reactid="\.0\.0\.0\.2\.3\.1\.0\.1\.1\.1\.0\.2"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;div class="dropdown-button open" role="button"
+                                data-reactid=".0.0.0.2.3.1.0.1.1.1.0.2"&gt;
+                            </td>
+                        </tr>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">div[data-reactid="\.0\.0\.0\.2\.3\.1\.0\.1\.1\.4\.0\.2"]</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;div class="dropdown-button open" role="button"
+                                data-reactid=".0.0.0.2.3.1.0.1.1.4.0.2"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="report-check">
+                <div class="report-check-top"><a aria-describedby="check-help-f-2"
+                                                 class="ms-Link insights-link root-102"
+                                                 href="https://dequeuniversity.com/rules/axe/3.2/label?application=msftAI"
+                                                 target="_blank">label:</a> <span id="check-help-f-2">Form elements must have labels</span>
+                    <span>(1) </span><span class="guidance-links"><a class="ms-Link insights-link root-102"
+                                                                     href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships"
+                                                                     target="_blank">WCAG 1.3.1</a><span>,&nbsp;</span><a
+                            class="ms-Link insights-link root-102"
+                            href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html"
+                            target="_blank">WCAG 3.3.2</a></span></div>
+                <div class="report-instances"><p>Failed elements:</p>
+                    <table class="report-instance-table">
+                        <tbody>
+                        <tr class="path-row">
+                            <td class="label">Path</td>
+                            <td class="content">input</td>
+                        </tr>
+                        <tr class="snippet-row">
+                            <td class="label">Snippet</td>
+                            <td class="content">&lt;input placeholder="Find a user"
+                                data-reactid=".0.0.0.2.3.1.0.1.1.0.0.1"&gt;
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div><img class="report-images" src="images/dialog-directMessage.png"></div>
+</div>
+<script>
+    var coll = document.getElementsByClassName("report-check-top");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 </body>
 </html>
